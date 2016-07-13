@@ -1,0 +1,25 @@
+<div>
+    <h1>Student list</h1>
+    <button class="btn btn-default" (click)="add()">Insert</button>
+    <table class="table">
+                 <thead>
+                 <tr>
+                     <th>Id</th>
+                     <th>Name</th>
+                     <th>Action</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr *ngFor="#student of students">
+                     <td>{{student.id}}</td>
+                     <td>
+                        {{student.name}}
+                     </td>
+                     <td nowrap>
+                         <button *ngIf="student" class="btn btn-default" (click)="edit(student)">Edit</button>
+                         <delete [student]="student"></delete>
+                     </td>
+                 </tr>
+                 </tbody>
+             </table>
+</div>
