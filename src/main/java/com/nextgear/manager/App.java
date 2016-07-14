@@ -32,6 +32,6 @@ public class App extends WebMvcConfigurerAdapter {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("forward:/index.html");
         registry.addViewController("/students").setViewName("forward:/index.html");
-        registry.addViewController("/swagger").setViewName("forward:/swagger-ui.html");
+        registry.addViewController("/swagger").setViewName("redirect:/swagger-ui.html");
     }
 }
