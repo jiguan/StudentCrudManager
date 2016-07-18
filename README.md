@@ -15,3 +15,6 @@
 ### Links
 - After application is started, [swagger](http://localhost:8080/swagger) presents API summary. 
 - [Home page](http://localhost:8080/index.html) or [students page](http://localhost:8080/studnets) list all students
+
+### Screen shots 
+- Please check Issues for screen shots
