@@ -17,4 +17,4 @@
 - [Home page](http://localhost:8080/index.html) or [students page](http://localhost:8080/studnets) list all students
 
 ### Screen shots 
-- Please check Issues for screen shots
+- Please check [Issues](https://github.com/jiguan/springboot-angular2/issues) for screen shots
