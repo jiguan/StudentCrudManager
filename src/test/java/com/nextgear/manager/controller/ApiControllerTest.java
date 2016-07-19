@@ -2,7 +2,6 @@ package com.nextgear.manager.controller;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -17,9 +16,12 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.invocation.InvocationOnMock;
+import org.mockito.runners.MockitoJUnitRunner;
 import org.mockito.stubbing.Answer;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
@@ -29,10 +31,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nextgear.manager.model.Student;
 import com.nextgear.manager.service.StudentService;
 
+@RunWith(MockitoJUnitRunner.class)
 public class ApiControllerTest {
 
-    private StudentService service = mock(StudentService.class);
     ObjectMapper mapper = new ObjectMapper();
+    
+    @Mock
+    private StudentService service;
 
     @InjectMocks
     ApiController controller = new ApiController();
