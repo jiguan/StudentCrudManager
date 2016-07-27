@@ -1,10 +1,13 @@
 # springboot-angular2
+A simple project demonstrates integration of spring boot and angular2
+- Back-end side connects to an embedded DB (HSQLDB) and provides RESTful APIs. 
+- Front-end side provides the student list page, edit page and a delete confirmation dialog. 
 
 ###Prerequisite
 - node v4.x.x 
 - npm 3.x.x 
 
-### Version
+### Angular2 version
 - The version of angular 2 is `2.0.0-beta.15`
 
 ### How to install
